@@ -41,7 +41,7 @@ class Dog
     if self.id?
       self.update
     else
-      
+      #save functionality
     end
   end
 
