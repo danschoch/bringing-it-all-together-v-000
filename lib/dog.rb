@@ -32,7 +32,7 @@ class Dog
     self.new(id: id, name: name, breed: breed)
   end
 
-  def self.find_by_name (name)
+  #def self.find_by_name (name)
     sql = <<-SQL
       SELECT * FROM dogs WHERE name = ?;
     SQL
@@ -42,7 +42,7 @@ class Dog
     end.first
   end
 
-  def self.find_by_id(id)
+  #def self.find_by_id(id)
     sql = <<-SQL
       SELECT * FROM dogs WHERE id = ?;
     SQL
