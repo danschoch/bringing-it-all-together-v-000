@@ -56,10 +56,6 @@ class Dog
 
   def self.find_or_create_by (name:, breed:)
 
-  def update
-
-  end
-
   def save
     if self.id?
       self.update
