@@ -47,7 +47,7 @@ class Dog
       SELECT * FROM dogs WHERE id = ?;
     SQL
 
-    DB[:conn].execute(sql,id).map do |row|
+    DB[:conn].execute(sql, id).map do |row|
       self.new_from_db(row)
     end.first
   end
@@ -62,7 +62,7 @@ class Dog
   #end
 
   def save
-    if self.id?
+    if self.id
       self.update
     else
       sql = "INSERT INTO dogs (name, breed) VALUES (?, ?)"
