@@ -33,28 +33,27 @@ class Dog
 
   end
 
-  def self.find_by_id()
-      
+  def self.find_by_id(id)
+
   end
 
   def self.create
-    
-  end
 
+  end
 
   def update
 
   end
 
-  def 
-    
+  def
+
   end
 
   def save
     if self.id?
       self.update
     else
-      
+
       #save functionality
     end
   end
