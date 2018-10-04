@@ -65,6 +65,7 @@ class Dog
       self.new (dog[0], dog[1], dog[2])
     else
       self.create(name: name, breed: breed)
+    end
   end
 
   def update
