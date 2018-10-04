@@ -45,7 +45,7 @@ class Dog
       SELECT * FROM dogs WHERE id = ?;
     SQL
 
-    DB[:conn].execute (sql, id.to_i)[0]
+    DB[:conn].execute (sql, id)[0]
   end
 
   def self.create (name:, breed:)
